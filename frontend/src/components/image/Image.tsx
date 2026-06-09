@@ -1,6 +1,6 @@
 import { forwardRef, Ref } from "react";
 
-import commonPlaceholder from "@edifice.io/bootstrap/dist/images/common/image-placeholder.png";
+import commonPlaceholder from "@open-ent/bootstrap/dist/images/common/image-placeholder.png";
 import { useImage } from "@edifice.io/react";
 import clsx from "clsx";
 
