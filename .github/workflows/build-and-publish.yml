@@ -165,16 +165,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          GROUP_ID=$(mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout)
-          ARTIFACT_ID=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
-          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
           FAT_JAR=$(ls target/*-fat.jar 2>/dev/null | head -1)
-          echo "Publishing ${GROUP_ID}:${ARTIFACT_ID}:${VERSION}:fat"
           if [ -z "${FAT_JAR}" ]; then
             echo "::error::Fat JAR not found"
             ls -la target/*.jar 2>/dev/null || echo "No JARs found in target/"
             exit 1
           fi
+          # app-parent nomme le fat-jar groupId~artifactId~version-fat.jar
+          BASE=$(basename "${FAT_JAR}" -fat.jar)
+          GROUP_ID=${BASE%%~*}; REST=${BASE#*~}; ARTIFACT_ID=${REST%%~*}; VERSION=${REST#*~}
+          echo "Publishing ${GROUP_ID}:${ARTIFACT_ID}:${VERSION}:fat"
           mvn deploy:deploy-file \
             -Dfile="${FAT_JAR}" \
             -DgroupId="${GROUP_ID}" \
@@ -197,12 +197,12 @@ jobs:
           cat > /tmp/nx-settings.xml <<EOF
           <settings><servers><server><id>pt-releases</id><username>${NEXUS_USER}</username><password>${NEXUS_PASSWORD}</password></server></servers></settings>
           EOF
-          GROUP_ID=$(mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout)
-          ARTIFACT_ID=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
-          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
           FAT_JAR=$(ls target/*-fat.jar 2>/dev/null | head -1)
           if [ -z "${FAT_JAR}" ]; then echo "::error::Fat JAR not found"; exit 1; fi
           FAT_ABS=$(realpath "${FAT_JAR}")
+          # app-parent nomme le fat-jar groupId~artifactId~version-fat.jar
+          BASE=$(basename "${FAT_JAR}" -fat.jar)
+          GROUP_ID=${BASE%%~*}; REST=${BASE#*~}; ARTIFACT_ID=${REST%%~*}; VERSION=${REST#*~}
           echo "Deploying ${GROUP_ID}:${ARTIFACT_ID}:${VERSION}:fat -> rct-nexus"
           cd /tmp
           mvn deploy:deploy-file -s /tmp/nx-settings.xml -Dfile="${FAT_ABS}" -DgroupId="${GROUP_ID}" -DartifactId="${ARTIFACT_ID}" -Dversion="${VERSION}" -Dclassifier=fat -Dpackaging=jar -DrepositoryId=pt-releases -Durl="https://rct-nexus.tech.fr/repository/maven-releases/" -B
