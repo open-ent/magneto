@@ -1,5 +1,5 @@
 import {} from "~/models/comment.types";
-import { WorkspaceElement } from "@edifice.io/client";
+import { WorkspaceElement } from "@open-ent/client";
 
 import { emptySplitWorkspace } from "./emptySplitWorkspace";
 

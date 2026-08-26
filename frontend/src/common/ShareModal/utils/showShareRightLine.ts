@@ -1,4 +1,4 @@
-import { ShareRight } from "@edifice.io/client";
+import { ShareRight } from "@open-ent/client";
 
 export const showShareRightLine = (
   shareRight: ShareRight,

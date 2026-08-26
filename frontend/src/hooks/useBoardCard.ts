@@ -1,6 +1,6 @@
 import { useRef, useMemo, useCallback } from "react";
 
-import { useUser } from "@edifice.io/react";
+import { useUser } from "@open-ent/react";
 
 import {
   isClickable,

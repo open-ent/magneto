@@ -1,6 +1,6 @@
 import { ChangeEvent, FC, useState } from "react";
 
-import { Button } from "@edifice.io/react";
+import { Button } from "@open-ent/react";
 import CloseIcon from "@mui/icons-material/Close";
 import {
   Box,

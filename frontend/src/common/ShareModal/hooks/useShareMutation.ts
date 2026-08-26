@@ -1,4 +1,4 @@
-import { PutShareResponse, ShareRight, odeServices } from "@edifice.io/client";
+import { PutShareResponse, ShareRight, odeServices } from "@open-ent/client";
 import {
   UseMutationOptions,
   UseMutationResult,

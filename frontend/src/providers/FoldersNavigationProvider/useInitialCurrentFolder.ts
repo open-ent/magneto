@@ -1,4 +1,4 @@
-import { useEdificeClient } from "@edifice.io/react";
+import { useEdificeClient } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import { FOLDER_TYPE } from "~/core/enums/folder-type.enum";

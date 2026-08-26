@@ -7,10 +7,10 @@ import {
   FormControl,
   Input,
   Label,
-} from "@edifice.io/react";
-import { Editor, EditorRef } from "@edifice.io/react/editor";
-import { IconEdit } from "@edifice.io/react/icons";
-import { MediaLibraryType } from "@edifice.io/react/multimedia";
+} from "@open-ent/react";
+import { Editor, EditorRef } from "@open-ent/react/editor";
+import { IconEdit } from "@open-ent/react/icons";
+import { MediaLibraryType } from "@open-ent/react/multimedia";
 import { CancelOutlined, CheckCircleOutline } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
 import {

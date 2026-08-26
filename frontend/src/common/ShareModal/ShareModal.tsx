@@ -7,7 +7,7 @@ import {
   PutShareResponse,
   RightStringified,
   ShareRight,
-} from "@edifice.io/client";
+} from "@open-ent/client";
 import {
   Modal,
   Heading,
@@ -18,12 +18,12 @@ import {
   Button,
   Tooltip,
   Combobox,
-} from "@edifice.io/react";
+} from "@open-ent/react";
 import {
   IconBookmark,
   IconInfoCircle,
   IconRafterDown,
-} from "@edifice.io/react/icons";
+} from "@open-ent/react/icons";
 import Switch from "@mui/material/Switch";
 import { UseMutationResult } from "@tanstack/react-query";
 import { createPortal } from "react-dom";

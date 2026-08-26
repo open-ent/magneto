@@ -6,7 +6,7 @@ import {
   KeyboardEvent,
 } from "react";
 
-import { Button, FormControl, Input, Label, Modal } from "@edifice.io/react";
+import { Button, FormControl, Input, Label, Modal } from "@open-ent/react";
 import "./CreateFolder.scss";
 import { useTranslation } from "react-i18next";
 

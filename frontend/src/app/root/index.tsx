@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { LoadingScreen, Layout, useEdificeClient } from "@edifice.io/react";
+import { LoadingScreen, Layout, useEdificeClient } from "@open-ent/react";
 import { Outlet } from "react-router-dom";
 
 import { initToastFilter } from "~/common/ShareModal/utils/filterToast";

@@ -1,10 +1,10 @@
 import { ComponentPropsWithRef, useEffect, useState, useRef, FC } from "react";
 
-import { IWebApp } from "@edifice.io/client";
-import { IconButton } from "@edifice.io/react";
-import { Avatar } from "@edifice.io/react";
-import { AppIcon } from "@edifice.io/react";
-import { IconDelete, IconEdit } from "@edifice.io/react/icons";
+import { IWebApp } from "@open-ent/client";
+import { IconButton } from "@open-ent/react";
+import { Avatar } from "@open-ent/react";
+import { AppIcon } from "@open-ent/react";
+import { IconDelete, IconEdit } from "@open-ent/react/icons";
 import clsx from "clsx";
 
 interface UniqueImagePickerProps extends ComponentPropsWithRef<"input"> {

@@ -1,4 +1,4 @@
-import { ShareRight, ShareRightAction } from "@edifice.io/client";
+import { ShareRight, ShareRightAction } from "@open-ent/client";
 
 export const hasRight = (
   shareRight: ShareRight,

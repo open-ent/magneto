@@ -1,6 +1,6 @@
 import { FC, useMemo } from "react";
 
-import { Button, useEdificeClient } from "@edifice.io/react";
+import { Button, useEdificeClient } from "@open-ent/react";
 import {
   mdiAccountCircle,
   mdiCalendarBlank,

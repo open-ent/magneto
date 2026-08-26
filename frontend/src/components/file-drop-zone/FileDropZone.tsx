@@ -1,6 +1,6 @@
 import { FC, DragEvent } from "react";
 
-import { useWorkspaceFile } from "@edifice.io/react";
+import { useWorkspaceFile } from "@open-ent/react";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";

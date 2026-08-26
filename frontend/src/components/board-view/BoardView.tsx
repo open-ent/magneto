@@ -3,8 +3,8 @@ import { FC, useEffect, DragEvent, useState } from "react";
 import "./BoardView.scss";
 
 import { Paper } from "@cgi-learning-hub/ui";
-import { LoadingScreen, useEdificeClient } from "@edifice.io/react";
-import { MediaLibrary } from "@edifice.io/react/multimedia";
+import { LoadingScreen, useEdificeClient } from "@open-ent/react";
+import { MediaLibrary } from "@open-ent/react/multimedia";
 import { mdiKeyboardBackspace } from "@mdi/js";
 import Icon from "@mdi/react";
 import { Box, GlobalStyles } from "@mui/material";

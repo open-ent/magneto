@@ -9,12 +9,12 @@ import {
   useState,
 } from "react";
 
-import { RightRole } from "@edifice.io/client";
+import { RightRole } from "@open-ent/client";
 import {
   checkUserRight,
   findPathById,
   TreeViewHandlers,
-} from "@edifice.io/react";
+} from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import {

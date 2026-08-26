@@ -1,7 +1,7 @@
 import { forwardRef, Ref } from "react";
 
 import commonPlaceholder from "@open-ent/bootstrap/dist/images/common/image-placeholder.png";
-import { useImage } from "@edifice.io/react";
+import { useImage } from "@open-ent/react";
 import clsx from "clsx";
 
 import MagnetoIcon from "../SVG/MagnetoIcon";

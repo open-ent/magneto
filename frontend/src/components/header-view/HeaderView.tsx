@@ -3,8 +3,8 @@ import { FC } from "react";
 import "./HeaderView.scss";
 
 import { Button } from "@cgi-learning-hub/ui";
-import { IWebApp } from "@edifice.io/client";
-import { AppHeader, Breadcrumb, useEdificeClient } from "@edifice.io/react";
+import { IWebApp } from "@open-ent/client";
+import { AppHeader, Breadcrumb, useEdificeClient } from "@open-ent/react";
 import { mdiCheckCircle, mdiEarth } from "@mdi/js";
 import Icon from "@mdi/react";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";

@@ -7,8 +7,8 @@ import {
   type ShareRightAction,
   type ShareRightActionDisplayName,
   type ShareRightWithVisibles,
-} from "@edifice.io/client";
-import { useUser } from "@edifice.io/react";
+} from "@open-ent/client";
+import { useUser } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";

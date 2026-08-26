@@ -1,4 +1,4 @@
-import { RightRole } from "@edifice.io/client";
+import { RightRole } from "@open-ent/client";
 import { create } from "zustand";
 
 type UserRights = Record<RightRole, boolean>;
@@ -10,7 +10,7 @@ interface UserRightsState {
 
 /**
  * Basic store for managing "rights"
- * Use this store with `checkUserRight` utils from @edifice.io/react
+ * Use this store with `checkUserRight` utils from @open-ent/react
  * You can check rights in a react-router loader
  * And set userRights within the store to get a stable global state
  */

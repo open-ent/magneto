@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import { LoadingScreen } from "@edifice.io/react";
+import { LoadingScreen } from "@open-ent/react";
 import { Autocomplete, Box, TextField } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";

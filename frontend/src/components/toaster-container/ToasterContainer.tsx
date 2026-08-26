@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import { isActionAvailable } from "@edifice.io/client";
+import { isActionAvailable } from "@open-ent/client";
 import {
   Button,
   ActionBar,
   useToggle,
   useEdificeClient,
   checkUserRight,
-} from "@edifice.io/react";
+} from "@open-ent/react";
 import { useTransition, animated } from "@react-spring/web";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

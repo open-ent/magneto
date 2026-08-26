@@ -2,7 +2,7 @@ import React from "react";
 
 import "@open-ent/bootstrap/dist/index.css";
 import { ThemeProviderProps } from "@cgi-learning-hub/theme";
-import { EdificeClientProvider, EdificeThemeProvider } from "@edifice.io/react";
+import { EdificeClientProvider, EdificeThemeProvider } from "@open-ent/react";
 import {
   QueryCache,
   QueryClient,
