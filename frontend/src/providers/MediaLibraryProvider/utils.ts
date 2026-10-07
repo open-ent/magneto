@@ -1,4 +1,4 @@
-import { MediaLibraryType } from "@edifice.io/react";
+import { MediaLibraryType } from "@open-ent/react";
 
 import { EXTENSION_FORMAT } from "~/core/constants/extension-format.const";
 import { MEDIA_LIBRARY_TYPE } from "~/core/enums/media-library-type.enum";

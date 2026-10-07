@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Button, useEdificeClient, useToggle } from "@edifice.io/react";
+import { Button, useEdificeClient, useToggle } from "@open-ent/react";
 import { mdiFolderPlus, mdiStar } from "@mdi/js";
 import { Icon } from "@mdi/react";
 import { useTranslation } from "react-i18next";

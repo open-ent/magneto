@@ -105,7 +105,7 @@ export default ({ mode }: { mode: string }) => {
         ),
         "@images": resolve(
           __dirname,
-          "node_modules/@edifice.io/bootstrap/dist/images",
+          "node_modules/@open-ent/bootstrap/dist/images",
         ),
       },
     },

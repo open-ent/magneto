@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "./TreeViewContent.scss";
 
-import { TreeView } from "@edifice.io/react";
-import { useEdificeClient } from "@edifice.io/react";
+import { TreeView } from "@open-ent/react";
+import { useEdificeClient } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import { useGetFolderTypeData } from "./utils";

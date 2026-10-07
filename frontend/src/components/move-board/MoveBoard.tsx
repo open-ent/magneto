@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from "react";
 
-import { TreeView } from "@edifice.io/react";
-import { Button, Modal, useEdificeClient } from "@edifice.io/react";
+import { TreeView } from "@open-ent/react";
+import { Button, Modal, useEdificeClient } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import { useGetFolderTypeData } from "../tree-view/utils";

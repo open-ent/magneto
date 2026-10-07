@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-import { isActionAvailable } from "@edifice.io/client";
+import { isActionAvailable } from "@open-ent/client";
 import { useParams } from "react-router-dom";
 
 import { ReadView } from "~/components/read-view/ReadView";

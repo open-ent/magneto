@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { useEdificeClient, useEdificeIcons } from "@edifice.io/react";
+import { useEdificeClient, useEdificeIcons } from "@open-ent/react";
 
 import { StyledAppIcon, StyledBoxSvg } from "./style";
 import { CardContentSvgDisplayProps } from "./types";

@@ -1,8 +1,8 @@
 import { forwardRef, Ref } from "react";
 
-import { IWebApp } from "@edifice.io/client";
-import { useEdificeIcons } from "@edifice.io/react";
-import * as IconSprites from "@edifice.io/react/icons/apps";
+import { IWebApp } from "@open-ent/client";
+import { useEdificeIcons } from "@open-ent/react";
+import * as IconSprites from "@open-ent/react/icons/apps";
 import clsx from "clsx";
 
 import Image from "../image/Image";

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { IResource } from "@edifice.io/client";
+import { IResource } from "@open-ent/client";
 
 interface UseBackgroundProps {
   selectedResource?: IResource;

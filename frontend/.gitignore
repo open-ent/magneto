@@ -8,7 +8,6 @@ tmp
 # Dependencies
 node_modules
 *.lock
-pnpm-lock.yaml
 .pnpm-store
 
 # Environment files

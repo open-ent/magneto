@@ -23,8 +23,8 @@ import {
   Modal,
   TextArea,
   useEdificeClient,
-} from "@edifice.io/react";
-import { MediaLibrary } from "@edifice.io/react/multimedia";
+} from "@open-ent/react";
+import { MediaLibrary } from "@open-ent/react/multimedia";
 import {
   ViewModule,
   ViewColumn,

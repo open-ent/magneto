@@ -4,13 +4,13 @@
     xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.edifice</groupId>
+    <groupId>fr.openent</groupId>
     <artifactId>app-parent</artifactId>
     <version>1.2.1</version>
   </parent>
   <groupId>fr.cgi</groupId>
   <artifactId>magneto</artifactId>
-  <version>2.10.7</version>
+  <version>2.10.0-patched</version>
   <scm>
     <connection>scm:git:https://github.com/OPEN-ENT-NG/magneto.git</connection>
     <developerConnection>scm:git:https://github.com/OPEN-ENT-NG/magneto.git</developerConnection>
@@ -30,21 +30,26 @@
       <id>ossvrtx</id>
       <url>https://oss.sonatype.org/content/repositories/iovertx-3720/</url>
     </repository>
+    <repository>
+      <id>pt-releases</id>
+      <name>rct-nexus maven-releases (entcore-libs patchées)</name>
+      <url>https://rct-nexus.tech.fr/repository/maven-releases/</url>
+    </repository>
   </repositories>
   <properties>
     <toolsVersion>2.0.0-final</toolsVersion>
     <powerMockVersion>2.0.2</powerMockVersion>
     <mockitoVersion>2.28.2</mockitoVersion>
-    <entCoreVersion>6.16.11</entCoreVersion>
+    <entCoreVersion>6.16.14-patched</entCoreVersion>
     <reflectionsVersion>0.10.2</reflectionsVersion>
     <gatlingHighchartsVersion>2.2.2</gatlingHighchartsVersion>
     <apachePoiVersion>5.2.3</apachePoiVersion>
     <jsoupVersion>1.18.3</jsoupVersion>
     <thumbnailatorVersion>0.4.20</thumbnailatorVersion>
     <shade.minimizeJar>false</shade.minimizeJar>
-    <modMongoVersion>4.2.0</modMongoVersion>
-    <modJsonSchemaValidatorVersion>2.2.0</modJsonSchemaValidatorVersion>
-    <entCoreLibsVersion>6.16.4</entCoreLibsVersion>
+    <modMongoVersion>4.2-SNAPSHOT</modMongoVersion>
+    <modJsonSchemaValidatorVersion>2.2-SNAPSHOT</modJsonSchemaValidatorVersion>
+    <entCoreLibsVersion>6.16.8-patched</entCoreLibsVersion>
   </properties>
   <dependencies>
     <dependency>
@@ -52,12 +57,6 @@
       <artifactId>vertx-core</artifactId>
       <version>${vertxVersion}</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.entcore</groupId>
-      <artifactId>common</artifactId>
-      <version>${entCoreLibsVersion}</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
@@ -81,12 +80,6 @@
       <groupId>io.vertx</groupId>
       <artifactId>vertx-unit</artifactId>
       <version>${vertxVersion}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.entcore</groupId>
-      <artifactId>tests</artifactId>
-      <version>${entCoreVersion}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -188,4 +181,27 @@
       <classifier>fat</classifier>
     </dependency>
   </dependencies>
+
+    <profiles>
+        <!--
+            org.entcore:tests ne fournit QUE les scénarios Gatling/Scala (src/test/scala/**),
+            jamais joués en CI. Depuis le 08/09/2026, le module `tests` d'entcore est exclu de la
+            publication du fork (open-ent/entcore-v2, commit 275a060 : maven-scala-plugin 2.15.2 ne
+            compile plus Scala 2.12 sous JDK 21), donc org.entcore:tests:*-patched n'existe plus.
+            Maven résout les dépendances de portée `test` même avec -Dmaven.test.skip=true : laissée
+            dans <dependencies>, elle faisait échouer `mvn package` (donc toute la CI).
+            `mvn -Pgatling-it ...` pour la réactiver le jour où l'artefact sera republié.
+        -->
+        <profile>
+            <id>gatling-it</id>
+            <dependencies>
+                <dependency>
+                  <groupId>org.entcore</groupId>
+                  <artifactId>tests</artifactId>
+                  <version>${entCoreVersion}</version>
+                  <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
 </project>

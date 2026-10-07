@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import { useEdificeClient } from "@edifice.io/react";
+import { useEdificeClient } from "@open-ent/react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   AvatarGroup,

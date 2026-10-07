@@ -2,7 +2,7 @@
 
 import { Card, ICardItemResponse } from "./card.model";
 import { FOLDER_TYPE } from "../core/enums/folder-type.enum";
-import {} from "@edifice.io/client";
+import {} from "@open-ent/client";
 import { LAYOUT_TYPE } from "../core/enums/layout-type.enum";
 import { SORT_OR_CREATE_BY } from "~/core/enums/sort-order";
 import { Section } from "~/providers/BoardProvider/types";

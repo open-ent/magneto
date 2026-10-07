@@ -1,6 +1,6 @@
 import { useState, useEffect, SetStateAction, Dispatch } from "react";
 
-import { WorkspaceElement } from "@edifice.io/client";
+import { WorkspaceElement } from "@open-ent/client";
 
 import { useMediaLibrary } from "./useMediaLibrary";
 import { MediaProps } from "~/components/board-view/types";

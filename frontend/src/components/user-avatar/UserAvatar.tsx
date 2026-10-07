@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { useDirectory } from "@edifice.io/react";
+import { useDirectory } from "@open-ent/react";
 import { Tooltip } from "@mui/material";
 import { useTranslation } from "react-i18next";
 

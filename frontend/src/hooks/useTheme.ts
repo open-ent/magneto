@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { odeServices } from "@edifice.io/client";
+import { odeServices } from "@open-ent/client";
 
 // Cache en dehors du composant
 let cachedIsTheme1D: boolean | null = null;

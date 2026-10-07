@@ -7,6 +7,23 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" id="favicon" href="" />
+    <!-- Branding Open ENT (thème 1d/2d, ex. bandeau vert) chargé au runtime :
+         le bundle @edifice.io de magneto ne contient pas le skin openent. -->
+    <link rel="stylesheet" href="/assets/themes/openent-bootstrap/index.css" />
+    <style>
+      /* Le double-bootstrap (openent par-dessus @edifice.io) fait collapser le header
+         en mode mobile sur la vue board ; on ré-ancre le menu compte en haut-droite
+         du viewport en desktop (>=768px). Sans effet sur la vue liste / le vrai mobile. */
+      @media (min-width: 768px) {
+        #dropdown-navbar.dropdown-menu {
+          position: fixed !important;
+          top: 128px !important;
+          right: 12px !important;
+          left: auto !important;
+          transform: none !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root" data-host="{{host}}" data-theme="{{themePlatform}}"></div>
