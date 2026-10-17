@@ -99,8 +99,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1
       katex:
-        specifier: ^0.16.11
-        version: 0.16.47
+        specifier: ^0.18.0
+        version: 0.18.11
       lodash:
         specifier: ^4.17.21
         version: 4.18.1
@@ -1486,7 +1486,7 @@ packages:
     resolution: {integrity: sha512-M+63EBTWykwdhL1iPPKD57+Xd1imgz9GTsTb41nv0n6AmbuItggbGUXSj5+uzhf6XpDg+bJ7jnGM9mJrDOCilQ==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/4c20377db1b6028283976fa315da3dfc9c0bd763}
 
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-Zi5cZaA1tHgwmnPx8eLS8HA/rxqQl6MTJ+gpKg+l/X9Pfphk67rM/ofipRr1mCaAnMVAQdeT4UIMW1yL0iIzVA==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/6a919ba5eb5e54cc5d4ca5ac0eb96f8dfb7ef4a2}
+    resolution: {integrity: sha512-Ib2vgajZJ6oG/OfcFgCc+zSKsgas2kWchUppWNqVmMltBn+Ts/VYMF61MHxPFMLAP0Rk4dakFeF5gRbWQ5Sscg==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/657cafa5a2dae361b0a3925407fed809619a7a7f}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -2841,6 +2841,10 @@ packages:
     resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
     engines: {node: '>=16'}
 
+  commander@15.0.0:
+    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+    engines: {node: '>=22.12.0'}
+
   commander@8.3.0:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
@@ -3999,6 +4003,11 @@ packages:
 
   katex@0.16.47:
     resolution: {integrity: sha512-Eeo8Ys1doU1z+x8AZsPpQu+p/QcZBI5PeOo7QGQdy2x2m0MU/hYagBbGOmXwr5KVbEfVuWv9LpnQWeehogurjg==}
+    hasBin: true
+
+  katex@0.18.11:
+    resolution: {integrity: sha512-yvyz/2VMKqoho/35Hat5w37wIEdWJ5ElVMidTAlWrxr5uW4aBGsEpveTmKh18/zw08v/7lGswCPon4OhqmqrTA==}
+    deprecated: Accidentally published with breaking changes. Use 0.19.0 instead.
     hasBin: true
 
   keyv@4.5.4:
@@ -8770,6 +8779,8 @@ snapshots:
 
   commander@11.0.0: {}
 
+  commander@15.0.0: {}
+
   commander@8.3.0: {}
 
   compare-versions@6.1.1: {}
@@ -10111,6 +10122,10 @@ snapshots:
   katex@0.16.47:
     dependencies:
       commander: 8.3.0
+
+  katex@0.18.11:
+    dependencies:
+      commander: 15.0.0
 
   keyv@4.5.4:
     dependencies:
