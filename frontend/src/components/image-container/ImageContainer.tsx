@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
+import { Box } from "@mui/material";
 import { IconButton } from "@open-ent/react";
 import { IconEdit } from "@open-ent/react/icons";
-import { Box } from "@mui/material";
 
 import { imageStyle, mainBoxStyle, StyledIconButtonBox } from "./style";
 import { ImageContainerProps } from "./types";

@@ -1,6 +1,5 @@
 import { FC, useState } from "react";
 
-import { useEdificeClient } from "@open-ent/react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   AvatarGroup,
@@ -14,6 +13,7 @@ import {
   ListItemText,
   Divider,
 } from "@mui/material";
+import { useEdificeClient } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import {

@@ -40,8 +40,8 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "pnpm run format",
-      "pnpm run fix"
+      "prettier --write",
+      "eslint --fix --no-warn-ignored"
     ]
   },
   "dependencies": {

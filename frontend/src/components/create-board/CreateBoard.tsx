@@ -14,6 +14,13 @@ import {
   TextField,
 } from "@cgi-learning-hub/ui";
 import {
+  ViewModule,
+  ViewColumn,
+  ViewStream,
+  MoveUpOutlined,
+  MoveDownOutlined,
+} from "@mui/icons-material";
+import {
   Button,
   Checkbox,
   FormControl,
@@ -25,13 +32,6 @@ import {
   useEdificeClient,
 } from "@open-ent/react";
 import { MediaLibrary } from "@open-ent/react/multimedia";
-import {
-  ViewModule,
-  ViewColumn,
-  ViewStream,
-  MoveUpOutlined,
-  MoveDownOutlined,
-} from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 
 import {

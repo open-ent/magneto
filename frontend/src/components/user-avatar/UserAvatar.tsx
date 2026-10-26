@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import { useDirectory } from "@open-ent/react";
 import { Tooltip } from "@mui/material";
+import { useDirectory } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import {

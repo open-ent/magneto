@@ -1,6 +1,5 @@
 import { FC, useState } from "react";
 
-import { Button, SearchBar } from "@open-ent/react";
 import CloseIcon from "@mui/icons-material/Close";
 import {
   Box,
@@ -10,6 +9,7 @@ import {
   Switch,
   Typography,
 } from "@mui/material";
+import { Button, SearchBar } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 

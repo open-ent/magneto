@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import { Button } from "@open-ent/react";
 import { Modal, Paper, Typography, Box } from "@mui/material";
+import { Button } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import { modalPaperStyles, titleStyles, buttonContainerStyles } from "./style";

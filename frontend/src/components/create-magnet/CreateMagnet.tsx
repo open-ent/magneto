@@ -1,16 +1,6 @@
 import { FC, useEffect, useRef, useState, useCallback } from "react";
 
 import { Button, IconButton } from "@cgi-learning-hub/ui";
-import {
-  IconButton as EdIconButton,
-  Button as EdificeButton,
-  FormControl,
-  Input,
-  Label,
-} from "@open-ent/react";
-import { Editor, EditorRef } from "@open-ent/react/editor";
-import { IconEdit } from "@open-ent/react/icons";
-import { MediaLibraryType } from "@open-ent/react/multimedia";
 import { CancelOutlined, CheckCircleOutline } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
 import {
@@ -24,6 +14,16 @@ import {
   FormControl as FormControlMUI,
   Tooltip,
 } from "@mui/material";
+import {
+  IconButton as EdIconButton,
+  Button as EdificeButton,
+  FormControl,
+  Input,
+  Label,
+} from "@open-ent/react";
+import { Editor, EditorRef } from "@open-ent/react/editor";
+import { IconEdit } from "@open-ent/react/icons";
+import { MediaLibraryType } from "@open-ent/react/multimedia";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 

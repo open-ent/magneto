@@ -1,6 +1,5 @@
 import { FC, useState, KeyboardEvent, useEffect, useRef } from "react";
 
-import { useUser } from "@open-ent/react";
 import { mdiArrowUpCircle } from "@mdi/js";
 import Icon from "@mdi/react";
 import CloseIcon from "@mui/icons-material/Close";
@@ -13,6 +12,7 @@ import {
   Modal,
   Typography,
 } from "@mui/material";
+import { useUser } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import {

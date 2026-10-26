@@ -7,11 +7,11 @@ import {
   memo,
 } from "react";
 
-import { useEdificeClient } from "@open-ent/react";
 import { mdiArrowUpCircle } from "@mdi/js";
 import Icon from "@mdi/react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Avatar, Box, IconButton, Typography } from "@mui/material";
+import { useEdificeClient } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 

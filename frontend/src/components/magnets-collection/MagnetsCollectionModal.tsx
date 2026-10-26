@@ -1,12 +1,12 @@
 import React, { FunctionComponent, useState } from "react";
 
+import { Switch } from "@mui/material";
 import {
   Modal,
   SearchBar,
   useEdificeClient,
   useToggle,
 } from "@open-ent/react";
-import { Switch } from "@mui/material";
 import { useSpring } from "@react-spring/web";
 import { useTranslation } from "react-i18next";
 

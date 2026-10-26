@@ -1,9 +1,9 @@
 import { FC, useState, KeyboardEvent, memo, useCallback } from "react";
 
-import { useUser } from "@open-ent/react";
 import { mdiCommentOutline } from "@mdi/js";
 import Icon from "@mdi/react";
 import { Avatar, Box, InputBase, Typography } from "@mui/material";
+import { useUser } from "@open-ent/react";
 import { useTranslation } from "react-i18next";
 
 import {

@@ -1,8 +1,8 @@
 import { FC } from "react";
 
+import { Box } from "@mui/material";
 import { IconButton } from "@open-ent/react";
 import { IconEdit } from "@open-ent/react/icons";
-import { Box } from "@mui/material";
 
 import { videoContainerStyle, videoStyle } from "./style";
 import { VideoPlayerProps } from "./types";

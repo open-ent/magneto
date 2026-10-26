@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import { Card, useEdificeClient } from "@open-ent/react";
-import "./FolderItem.scss";
 import { mdiFolder, mdiFolderAccount } from "@mdi/js";
 import Icon from "@mdi/react";
+import { Card, useEdificeClient } from "@open-ent/react";
 import { useDrop } from "react-dnd";
+import "./FolderItem.scss";
 
 import { DRAG_AND_DROP_TYPE } from "~/core/enums/drag-and-drop-type.enum";
 import { FOLDER_TYPE, MAIN_PAGE_TITLE } from "~/core/enums/folder-type.enum";

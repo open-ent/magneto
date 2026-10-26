@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { Card, useEdificeClient, Tooltip } from "@open-ent/react";
 import {
   mdiAccountCircle,
   mdiCalendarBlank,
@@ -12,6 +11,7 @@ import {
 } from "@mdi/js";
 import { Icon } from "@mdi/react";
 import { Box } from "@mui/material";
+import { Card, useEdificeClient, Tooltip } from "@open-ent/react";
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
 import { useDrag } from "react-dnd";
