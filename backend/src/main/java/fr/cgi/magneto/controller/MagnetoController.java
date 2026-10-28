@@ -39,23 +39,16 @@ public class MagnetoController extends ControllerHelper {
                 renderJson(request, config);
         }
 
+        /**
+         * Ancienne adresse de l'interface AngularJS, abandonnée : seule l'interface React est conservée.
+         * La méthode reste nommée `view` pour conserver le droit workflow « MagnetoController|view »
+         * (c'est lui qui ouvre l'accès à l'application aux rôles) ; elle renvoie vers /magneto.
+         */
         @Get("/angularJS")
-        @ApiDoc("Render view")
+        @ApiDoc("Redirige vers l'interface React")
         @SecuredAction(Rights.VIEW)
         public void view(HttpServerRequest request) {
-                String websocketEndpoint = Field.DEV.equals(this.magnetoConfig.mode())
-                                ? String.format(":%s%s", this.magnetoConfig.websocketConfig().getPort(),
-                                                this.magnetoConfig.websocketConfig().getEndpointProxy())
-                                : this.magnetoConfig.websocketConfig().getEndpointProxy();
-
-                Integer updateFrequency = this.magnetoConfig.magnetoUpdateFrequency();
-                Boolean isStandalone = this.magnetoConfig.getMagnetoStandalone();
-                JsonObject param = new JsonObject()
-                                .put(Field.WEBSOCKETENDPOINT, websocketEndpoint)
-                                .put(Field.MAGNETO_UPDATE_FREQUENCY, updateFrequency)
-                                .put(Field.MAGNETO_STANDALONE, isStandalone);
-                renderView(request, param, "magneto.html", null);
-                eventStore.createAndStoreEvent(ACCESS.name(), request);
+                redirect(request, "/magneto");
         }
 
         @Get("")
