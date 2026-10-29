@@ -25,13 +25,13 @@ public class DefaultShareBookMarkService implements ShareBookMarkService {
     public Future<JsonObject> get(String userId, String id) {
         Promise<JsonObject> promise = Promise.promise();
         final String query =
-                "MATCH (:User {id:{userId}})-[:HAS_SB]->(sb:ShareBookmark) " +
+                "MATCH (:User {id:$userId})-[:HAS_SB]->(sb:ShareBookmark) " +
                         "UNWIND TAIL(sb." + id + ") as vid " +
                         "MATCH (v:Visible {id : vid}) " +
-                        "WHERE not(has(v.deleteDate)) " +
+                        "WHERE v.deleteDate IS NULL " +
                         "RETURN \"" + id + "\" as id, HEAD(sb." + id + ") as name, " +
                         "COLLECT(DISTINCT {id : v.id, name : v.name, displayName :  v.displayName, groupType : labels(v), " +
-                        "groupProfile : v.filter, nbUsers : v.nbUsers, profile : HEAD(v.profiles), activationCode : has(v.activationCode) }) as members;";
+                        "groupProfile : v.filter, nbUsers : v.nbUsers, profile : HEAD(v.profiles), activationCode : v.activationCode IS NOT NULL }) as members;";
         JsonObject params = new JsonObject();
         params.put("userId", userId);
         neo4j.execute(query, params, validUniqueResultHandler(event -> {

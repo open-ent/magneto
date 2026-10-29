@@ -23,7 +23,7 @@ public class DefaultUserService implements UserService {
         Promise<JsonArray> promise = Promise.promise();
 
         String query = "MATCH (s:Structure)<-[:DEPENDS]-(:ProfileGroup)<-[:IN]-(u:User) " +
-                "WHERE u.id IN {userIds} " +
+                "WHERE u.id IN $userIds " +
                 "RETURN distinct u.id as id, u.profiles as profiles, s.UAI as uai";
 
         JsonObject params = new JsonObject()
