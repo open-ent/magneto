@@ -76,7 +76,7 @@
     "i18next": "23.5.1",
     "i18next-http-backend": "2.2.2",
     "immutability-helper": "^3.1.1",
-    "katex": "^0.16.11",
+    "katex": "^0.18.0",
     "lodash": "^4.17.21",
     "material-icons": "^1.13.12",
     "papaparse": "^5.4.1",
