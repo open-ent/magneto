@@ -93,8 +93,8 @@ importers:
         specifier: 23.5.1
         version: 23.5.1
       i18next-http-backend:
-        specifier: 2.2.2
-        version: 2.2.2
+        specifier: 4.0.4
+        version: 4.0.4
       immutability-helper:
         specifier: ^3.1.1
         version: 3.1.1
@@ -2907,9 +2907,6 @@ packages:
   crelt@1.0.7:
     resolution: {integrity: sha512-aK6BbWfhf4U/wCcLHKPJl/xa6VkVstRaPywWtMKGwuOLc/wZTyQYuoxgvZnNsBvv7Kg3YTBQYYBCggcviQczuA==}
 
-  cross-fetch@3.1.6:
-    resolution: {integrity: sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -3684,8 +3681,9 @@ packages:
   i18next-browser-languagedetector@7.2.1:
     resolution: {integrity: sha512-h/pM34bcH6tbz8WgGXcmWauNpQupCGr25XPp9cZwZInR9XHSjIFDYp1SIok7zSPsTOMxdvuLyu86V+g2Kycnfw==}
 
-  i18next-http-backend@2.2.2:
-    resolution: {integrity: sha512-mJu4ZqzDtBiU3O4GV9AbK5ekEqoDMdMnCl3pkdXmb5b8yoIH//u8FsmIe6C5qXb3teZu+j6VMi20tjUgzeABiw==}
+  i18next-http-backend@4.0.4:
+    resolution: {integrity: sha512-nG9OQKvUsPiTVUBg1rCGmvmWhzxC9GOxVbGdTYyejHVMSUjutt1hiBNVSzhB/ZE7keL9Xkb880kUfhDovV5T5g==}
+    engines: {node: '>=18'}
 
   i18next@23.5.1:
     resolution: {integrity: sha512-JelYzcaCoFDaa+Ysbfz2JsGAKkrHiMG6S61+HLBUEIPaF40WMwW9hCPymlQGrP+wWawKxKPuSuD71WZscCsWHg==}
@@ -8837,12 +8835,6 @@ snapshots:
 
   crelt@1.0.7: {}
 
-  cross-fetch@3.1.6:
-    dependencies:
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
-
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -9818,11 +9810,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.7
 
-  i18next-http-backend@2.2.2:
-    dependencies:
-      cross-fetch: 3.1.6
-    transitivePeerDependencies:
-      - encoding
+  i18next-http-backend@4.0.4: {}
 
   i18next@23.5.1:
     dependencies:
