@@ -31,7 +31,7 @@ export const ModalExplorer: FC<ModalExplorerProps> = ({ onboarding }) => {
 
   useEffect(() => {
     const link = document.createElement("link");
-    link.href = "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
+    link.href = "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css";
     link.rel = "stylesheet";
     link.type = "text/css";
 
