@@ -3,6 +3,7 @@ package fr.cgi.magneto.service;
 import fr.cgi.magneto.config.MagnetoConfig;
 import fr.cgi.magneto.service.impl.DefaultBoardService;
 import fr.wseduc.mongodb.MongoDb;
+import fr.wseduc.webutils.collections.SharedDataHelper;
 import fr.wseduc.webutils.security.SecuredAction;
 import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonObject;
@@ -46,6 +47,9 @@ public class BoardServiceTest {
         vertx = Vertx.vertx();
         MockitoAnnotations.initMocks(this);
         MongoDb.getInstance().init(vertx.eventBus(), "fr.cgi.magneto");
+        // ServiceFactory construit DefaultPDFExportService, dont PdfFactory lit une
+        // map partagée locale : sans ce init le helper n'a pas de Vertx (NPE).
+        SharedDataHelper.getInstance().init(vertx);
 
         this.serviceFactory = new ServiceFactory(vertx,
                 storage,

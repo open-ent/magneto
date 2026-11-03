@@ -182,6 +182,22 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <!--
+            Mockito 2 / PowerMock accèdent par réflexion à java.lang.Object : sous JDK 21 le
+            module java.base ne l'ouvre plus au classpath, et les tests échouaient d'emblée en
+            InaccessibleObjectException. L'ouverture est limitée au paquet strictement requis.
+          -->
+          <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
     <profiles>
         <!--
             org.entcore:tests ne fournit QUE les scénarios Gatling/Scala (src/test/scala/**),
