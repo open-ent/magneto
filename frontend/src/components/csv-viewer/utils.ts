@@ -1,6 +1,6 @@
 import { GridColDef } from "@mui/x-data-grid";
 import Papa from "papaparse";
-import * as XLSX from "xlsx";
+import * as XLSX from "@e965/xlsx";
 
 import { GridDataType, PAGE_SIZE_OPTIONS } from "./types";
 
