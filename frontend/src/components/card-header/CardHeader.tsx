@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { useTranslation } from "react-i18next";
 
 import LockIcon from "@mui/icons-material/Lock";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
@@ -34,6 +35,17 @@ const TimestampDisplay = memo(
     prevProps.modificationDate === nextProps.modificationDate,
 );
 
+/** Cadenas d'un tableau partagé en lecture seule, avec son infobulle (comme dans l'ancienne interface). */
+const LockedIndicator = () => {
+  const { t } = useTranslation("magneto");
+  const label = t("magneto.card.locked.tooltip");
+  return (
+    <Tooltip title={label}>
+      <LockIcon aria-label={label} data-testid="card-locked" />
+    </Tooltip>
+  );
+};
+
 export const CardHeader = memo(
   ({
     avatarUrl,
@@ -47,7 +59,7 @@ export const CardHeader = memo(
       avatar={<Avatar sx={styledAvatar} aria-label="recipe" src={avatarUrl} />}
       action={
         <div>
-          {isLocked && <LockIcon />}
+          {isLocked && <LockedIndicator />}
           <IconButton
             sx={styledIconButton}
             aria-label="settings"
