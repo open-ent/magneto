@@ -56,7 +56,7 @@ importers:
         version: 7.29.13(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react@18.2.0))(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mui/system@7.3.11(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@mui/x-data-grid-generator':
         specifier: ^7.22.2
-        version: 7.29.13(324ab4ac74ecf6c022c31e780ad95cd3)
+        version: 7.29.13(dfwvk734cmraoqyx6m2ivk54fe)
       '@open-ent/bootstrap':
         specifier: 2.5.30-patched
         version: 2.5.30-patched
@@ -1485,8 +1485,13 @@ packages:
   '@open-ent/client@2.5.30-patched':
     resolution: {integrity: sha512-LCayvYX2jiZ2jIkYeHT6jN+CpXHfqlci5Awmtya3V8hTlC92oEjGi/O5UanmCUbBmirtPTVetmNFXowduzcdjw==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/3713bd99136620cf8bfda6391a4c15628665b9c4}
 
+  '@open-ent/context-help@2.5.30-patched':
+    resolution: {integrity: sha512-sokrjKDb1od1ekW5+KCaFB3xhzLUQVgb6sfU24kHqlWcAvJ0d1fpnmcxEApegmCThAom813aB3eoF5KRQyjCYA==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/820fa8a5381df7c4a6bac31eaa4a52bb29469030}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-Igb4IoEKBYl4mvQKasMIiqkrxgaI61w7DiUNMDoldkElZAxXPwGgyDuXRsgAN2gObFWhFfeTDDB6Ez/FQIC8rg==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/10a9fb50d75a4691ee7bc5a40a4de0da41eab071}
+    resolution: {integrity: sha512-mc/f6IHZ5mmxLjQ3ItixQBWkUrisACz76N+7/Zm2Il1JP2kiHtx07jes/68DIiU0/akqLsMdQjCEhcbeFiFe1w==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/a635198379cf94dbd8d5cf09c26acf3a28884d44}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -6600,7 +6605,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.2.28
 
-  '@mui/x-data-grid-generator@7.29.13(324ab4ac74ecf6c022c31e780ad95cd3)':
+  '@mui/x-data-grid-generator@7.29.13(dfwvk734cmraoqyx6m2ivk54fe)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@mui/icons-material': 5.18.0(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react@18.2.0))(@types/react@18.2.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(react@18.2.0)
@@ -6873,6 +6878,10 @@ snapshots:
       - debug
       - supports-color
 
+  '@open-ent/context-help@2.5.30-patched(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
   '@open-ent/react@2.5.30-patched(@react-spring/web@9.7.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tanstack/react-query@4.44.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(@tiptap/react@2.11.0(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(date-fns@2.30.0)(react-dom@18.2.0(react@18.2.0))(react-hook-form@7.91.0(@types/react@18.2.28)(react@18.2.0))(react-i18next@13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@ant-design/icons': 5.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -6881,6 +6890,7 @@ snapshots:
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       '@floating-ui/react': 0.26.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@open-ent/bootstrap': 2.5.30-patched
+      '@open-ent/context-help': 2.5.30-patched(react@18.2.0)
       '@open-ent/tiptap-extensions': 2.5.30-patched(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)
       '@open-ent/utilities': 2.5.30-patched
       '@popperjs/core': 2.11.8
