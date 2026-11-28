@@ -106,8 +106,8 @@ importers:
         specifier: 23.16.8
         version: 23.16.8
       i18next-http-backend:
-        specifier: 2.2.2
-        version: 2.2.2
+        specifier: 4.0.4
+        version: 4.0.4
       immutability-helper:
         specifier: ^3.1.1
         version: 3.1.1
@@ -1486,12 +1486,12 @@ packages:
     resolution: {integrity: sha512-LCayvYX2jiZ2jIkYeHT6jN+CpXHfqlci5Awmtya3V8hTlC92oEjGi/O5UanmCUbBmirtPTVetmNFXowduzcdjw==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/3713bd99136620cf8bfda6391a4c15628665b9c4}
 
   '@open-ent/context-help@2.5.30-patched':
-    resolution: {integrity: sha512-sokrjKDb1od1ekW5+KCaFB3xhzLUQVgb6sfU24kHqlWcAvJ0d1fpnmcxEApegmCThAom813aB3eoF5KRQyjCYA==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/820fa8a5381df7c4a6bac31eaa4a52bb29469030}
+    resolution: {integrity: sha512-DYVbOQXpCjrDYwo6SMf4VUyYq3OHtIW8OlzKz/FIpvircNODhkJzltFuQSGNjubcFR6xBpaw+aPwV7MYl4bU6Q==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/5a228db7cd394a9a4e4aac2a71c3ab5f9cda3575}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-pgoQ8Ja+Ii5905Q5UvoH7Wt2NxuLRrhkGTV7j7+hkFWZzTbkAQ+RUcSuYOV6jZvjutTsVFEibCaIX0kxQsBRew==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/ad2777e53e53937adc9cb49ae4e9fd4b0f0cf31b}
+    resolution: {integrity: sha512-vf/9D4dUWLx1J0VdNQZocHGpEskwQLYrqB45wadOfLBHFcCE8e0+ACpoH0qoJqBHSi17NWTJKUFMbHBQ2GL+eA==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/a7efc7d98d2f5de4abe63d894e8a106e1efb43ec}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -2840,9 +2840,6 @@ packages:
   crelt@1.0.7:
     resolution: {integrity: sha512-aK6BbWfhf4U/wCcLHKPJl/xa6VkVstRaPywWtMKGwuOLc/wZTyQYuoxgvZnNsBvv7Kg3YTBQYYBCggcviQczuA==}
 
-  cross-fetch@3.1.6:
-    resolution: {integrity: sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -3582,8 +3579,9 @@ packages:
   i18next-browser-languagedetector@7.2.2:
     resolution: {integrity: sha512-6b7r75uIJDWCcCflmbof+sJ94k9UQO4X0YR62oUfqGI/GjCLVzlCwu8TFdRZIqVLzWbzNcmkmhfqKEr4TLz4HQ==}
 
-  i18next-http-backend@2.2.2:
-    resolution: {integrity: sha512-mJu4ZqzDtBiU3O4GV9AbK5ekEqoDMdMnCl3pkdXmb5b8yoIH//u8FsmIe6C5qXb3teZu+j6VMi20tjUgzeABiw==}
+  i18next-http-backend@4.0.4:
+    resolution: {integrity: sha512-nG9OQKvUsPiTVUBg1rCGmvmWhzxC9GOxVbGdTYyejHVMSUjutt1hiBNVSzhB/ZE7keL9Xkb880kUfhDovV5T5g==}
+    engines: {node: '>=18'}
 
   i18next@23.16.8:
     resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
@@ -8441,12 +8439,6 @@ snapshots:
 
   crelt@1.0.7: {}
 
-  cross-fetch@3.1.6:
-    dependencies:
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
-
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -9385,11 +9377,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.7
 
-  i18next-http-backend@2.2.2:
-    dependencies:
-      cross-fetch: 3.1.6
-    transitivePeerDependencies:
-      - encoding
+  i18next-http-backend@4.0.4: {}
 
   i18next@23.16.8:
     dependencies:
