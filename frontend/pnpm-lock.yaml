@@ -65,7 +65,7 @@ importers:
         version: 2.5.30-patched
       '@open-ent/react':
         specifier: 2.5.30-patched
-        version: 2.5.30-patched(@react-spring/web@9.7.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tanstack/react-query@4.44.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(@tiptap/react@2.11.0(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(date-fns@2.30.0)(react-dom@18.2.0(react@18.2.0))(react-hook-form@7.91.0(@types/react@18.2.28)(react@18.2.0))(react-i18next@13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+        version: 2.5.30-patched(@react-spring/web@9.7.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tanstack/react-query@4.44.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(@tiptap/react@2.11.0(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(date-fns@2.30.0)(react-dom@18.2.0(react@18.2.0))(react-hook-form@7.91.0(@types/react@18.2.28)(react@18.2.0))(react-i18next@13.5.0(i18next@26.3.4(typescript@5.2.2))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@open-ent/tiptap-extensions':
         specifier: 2.5.30-patched
         version: 2.5.30-patched(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)
@@ -103,8 +103,8 @@ importers:
         specifier: ^5.1.18
         version: 5.2.17(@types/react@18.2.28)(react@18.2.0)
       i18next:
-        specifier: 23.16.8
-        version: 23.16.8
+        specifier: 26.3.4
+        version: 26.3.4(typescript@5.2.2)
       i18next-http-backend:
         specifier: 2.2.2
         version: 2.2.2
@@ -149,7 +149,7 @@ importers:
         version: 2.6.1(@types/react-dom@18.2.13)(@types/react@18.2.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-i18next:
         specifier: 13.5.0
-        version: 13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 13.5.0(i18next@26.3.4(typescript@5.2.2))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-infinite-scroll-component:
         specifier: 6.1.1
         version: 6.1.1(react@18.2.0)
@@ -1486,12 +1486,12 @@ packages:
     resolution: {integrity: sha512-LCayvYX2jiZ2jIkYeHT6jN+CpXHfqlci5Awmtya3V8hTlC92oEjGi/O5UanmCUbBmirtPTVetmNFXowduzcdjw==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/3713bd99136620cf8bfda6391a4c15628665b9c4}
 
   '@open-ent/context-help@2.5.30-patched':
-    resolution: {integrity: sha512-sokrjKDb1od1ekW5+KCaFB3xhzLUQVgb6sfU24kHqlWcAvJ0d1fpnmcxEApegmCThAom813aB3eoF5KRQyjCYA==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/820fa8a5381df7c4a6bac31eaa4a52bb29469030}
+    resolution: {integrity: sha512-DYVbOQXpCjrDYwo6SMf4VUyYq3OHtIW8OlzKz/FIpvircNODhkJzltFuQSGNjubcFR6xBpaw+aPwV7MYl4bU6Q==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/5a228db7cd394a9a4e4aac2a71c3ab5f9cda3575}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-pgoQ8Ja+Ii5905Q5UvoH7Wt2NxuLRrhkGTV7j7+hkFWZzTbkAQ+RUcSuYOV6jZvjutTsVFEibCaIX0kxQsBRew==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/ad2777e53e53937adc9cb49ae4e9fd4b0f0cf31b}
+    resolution: {integrity: sha512-vf/9D4dUWLx1J0VdNQZocHGpEskwQLYrqB45wadOfLBHFcCE8e0+ACpoH0qoJqBHSi17NWTJKUFMbHBQ2GL+eA==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/a7efc7d98d2f5de4abe63d894e8a106e1efb43ec}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -3585,8 +3585,13 @@ packages:
   i18next-http-backend@2.2.2:
     resolution: {integrity: sha512-mJu4ZqzDtBiU3O4GV9AbK5ekEqoDMdMnCl3pkdXmb5b8yoIH//u8FsmIe6C5qXb3teZu+j6VMi20tjUgzeABiw==}
 
-  i18next@23.16.8:
-    resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
+  i18next@26.3.4:
+    resolution: {integrity: sha512-pa7m0d7pBDqGHZxljT+WPFeyFgQ7P7SciPPo1tTqYuO0z4sqADYhwnBESmmGp/wEof1inwdls/k8ZgTg8rxFHA==}
+    peerDependencies:
+      typescript: ^5 || ^6
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
@@ -6882,7 +6887,7 @@ snapshots:
     dependencies:
       react: 18.2.0
 
-  '@open-ent/react@2.5.30-patched(@react-spring/web@9.7.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tanstack/react-query@4.44.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(@tiptap/react@2.11.0(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(date-fns@2.30.0)(react-dom@18.2.0(react@18.2.0))(react-hook-form@7.91.0(@types/react@18.2.28)(react@18.2.0))(react-i18next@13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+  '@open-ent/react@2.5.30-patched(@react-spring/web@9.7.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tanstack/react-query@4.44.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(@tiptap/react@2.11.0(@tiptap/core@2.11.0(@tiptap/pm@2.11.0))(@tiptap/pm@2.11.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@types/react@18.2.28)(date-fns@2.30.0)(react-dom@18.2.0(react@18.2.0))(react-hook-form@7.91.0(@types/react@18.2.28)(react@18.2.0))(react-i18next@13.5.0(i18next@26.3.4(typescript@5.2.2))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@ant-design/icons': 5.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@dnd-kit/core': 6.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -6950,7 +6955,7 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       react-hook-form: 7.91.0(@types/react@18.2.28)(react@18.2.0)
       react-hot-toast: 2.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-i18next: 13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-i18next: 13.5.0(i18next@26.3.4(typescript@5.2.2))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-intersection-observer: 9.5.3(react@18.2.0)
       react-pdf: 10.3.0(@types/react@18.2.28)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9391,9 +9396,9 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  i18next@23.16.8:
-    dependencies:
-      '@babel/runtime': 7.29.7
+  i18next@26.3.4(typescript@5.2.2):
+    optionalDependencies:
+      typescript: 5.2.2
 
   iconv-lite@0.6.3:
     dependencies:
@@ -10761,11 +10766,11 @@ snapshots:
       '@types/react': 18.2.28
       '@types/react-dom': 18.2.13
 
-  react-i18next@13.5.0(i18next@23.16.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-i18next@13.5.0(i18next@26.3.4(typescript@5.2.2))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.29.7
       html-parse-stringify: 3.1.0
-      i18next: 23.16.8
+      i18next: 26.3.4(typescript@5.2.2)
       react: 18.2.0
     optionalDependencies:
       react-dom: 18.2.0(react@18.2.0)
