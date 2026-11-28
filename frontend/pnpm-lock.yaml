@@ -112,8 +112,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1
       katex:
-        specifier: ^0.16.11
-        version: 0.16.47
+        specifier: ^0.18.0
+        version: 0.18.11
       lodash:
         specifier: ^4.17.21
         version: 4.18.1
@@ -1486,12 +1486,12 @@ packages:
     resolution: {integrity: sha512-LCayvYX2jiZ2jIkYeHT6jN+CpXHfqlci5Awmtya3V8hTlC92oEjGi/O5UanmCUbBmirtPTVetmNFXowduzcdjw==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/3713bd99136620cf8bfda6391a4c15628665b9c4}
 
   '@open-ent/context-help@2.5.30-patched':
-    resolution: {integrity: sha512-sokrjKDb1od1ekW5+KCaFB3xhzLUQVgb6sfU24kHqlWcAvJ0d1fpnmcxEApegmCThAom813aB3eoF5KRQyjCYA==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/820fa8a5381df7c4a6bac31eaa4a52bb29469030}
+    resolution: {integrity: sha512-DYVbOQXpCjrDYwo6SMf4VUyYq3OHtIW8OlzKz/FIpvircNODhkJzltFuQSGNjubcFR6xBpaw+aPwV7MYl4bU6Q==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/5a228db7cd394a9a4e4aac2a71c3ab5f9cda3575}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-pgoQ8Ja+Ii5905Q5UvoH7Wt2NxuLRrhkGTV7j7+hkFWZzTbkAQ+RUcSuYOV6jZvjutTsVFEibCaIX0kxQsBRew==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/ad2777e53e53937adc9cb49ae4e9fd4b0f0cf31b}
+    resolution: {integrity: sha512-vf/9D4dUWLx1J0VdNQZocHGpEskwQLYrqB45wadOfLBHFcCE8e0+ACpoH0qoJqBHSi17NWTJKUFMbHBQ2GL+eA==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/a7efc7d98d2f5de4abe63d894e8a106e1efb43ec}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -2783,6 +2783,10 @@ packages:
     resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
     engines: {node: '>=16'}
 
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
+    engines: {node: '>=22.12.0'}
+
   commander@8.3.0:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
@@ -3886,6 +3890,11 @@ packages:
 
   katex@0.16.47:
     resolution: {integrity: sha512-Eeo8Ys1doU1z+x8AZsPpQu+p/QcZBI5PeOo7QGQdy2x2m0MU/hYagBbGOmXwr5KVbEfVuWv9LpnQWeehogurjg==}
+    hasBin: true
+
+  katex@0.18.11:
+    resolution: {integrity: sha512-yvyz/2VMKqoho/35Hat5w37wIEdWJ5ElVMidTAlWrxr5uW4aBGsEpveTmKh18/zw08v/7lGswCPon4OhqmqrTA==}
+    deprecated: Accidentally published with breaking changes. Use 0.19.0 instead.
     hasBin: true
 
   keyv@4.5.4:
@@ -8381,6 +8390,8 @@ snapshots:
 
   commander@11.0.0: {}
 
+  commander@15.1.0: {}
+
   commander@8.3.0: {}
 
   compress-commons@4.1.2:
@@ -9671,6 +9682,10 @@ snapshots:
   katex@0.16.47:
     dependencies:
       commander: 8.3.0
+
+  katex@0.18.11:
+    dependencies:
+      commander: 15.1.0
 
   keyv@4.5.4:
     dependencies:
