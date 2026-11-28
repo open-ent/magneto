@@ -234,7 +234,7 @@ importers:
         version: 6.7.5(eslint@9.39.5)(typescript@5.2.2)
       '@vitejs/plugin-react':
         specifier: 4.1.0
-        version: 4.1.0(vite@6.4.4(@types/node@20.8.5)(sass@1.107.1))
+        version: 4.1.0(vite@6.4.5(@types/node@20.8.5)(sass@1.107.1))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -299,11 +299,11 @@ importers:
         specifier: ^8.21.0
         version: 8.69.0(eslint@9.39.5)(typescript@5.2.2)
       vite:
-        specifier: 6.4.4
-        version: 6.4.4(@types/node@20.8.5)(sass@1.107.1)
+        specifier: 6.4.5
+        version: 6.4.5(@types/node@20.8.5)(sass@1.107.1)
       vite-tsconfig-paths:
         specifier: 4.2.1
-        version: 4.2.1(typescript@5.2.2)(vite@6.4.4(@types/node@20.8.5)(sass@1.107.1))
+        version: 4.2.1(typescript@5.2.2)(vite@6.4.5(@types/node@20.8.5)(sass@1.107.1))
       vitest:
         specifier: 0.34.6
         version: 0.34.6(happy-dom@12.9.1)(sass@1.107.1)
@@ -1486,12 +1486,12 @@ packages:
     resolution: {integrity: sha512-LCayvYX2jiZ2jIkYeHT6jN+CpXHfqlci5Awmtya3V8hTlC92oEjGi/O5UanmCUbBmirtPTVetmNFXowduzcdjw==, tarball: https://npm.pkg.github.com/download/@open-ent/client/2.5.30-patched/3713bd99136620cf8bfda6391a4c15628665b9c4}
 
   '@open-ent/context-help@2.5.30-patched':
-    resolution: {integrity: sha512-sokrjKDb1od1ekW5+KCaFB3xhzLUQVgb6sfU24kHqlWcAvJ0d1fpnmcxEApegmCThAom813aB3eoF5KRQyjCYA==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/820fa8a5381df7c4a6bac31eaa4a52bb29469030}
+    resolution: {integrity: sha512-DYVbOQXpCjrDYwo6SMf4VUyYq3OHtIW8OlzKz/FIpvircNODhkJzltFuQSGNjubcFR6xBpaw+aPwV7MYl4bU6Q==, tarball: https://npm.pkg.github.com/download/@open-ent/context-help/2.5.30-patched/5a228db7cd394a9a4e4aac2a71c3ab5f9cda3575}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
   '@open-ent/react@2.5.30-patched':
-    resolution: {integrity: sha512-pgoQ8Ja+Ii5905Q5UvoH7Wt2NxuLRrhkGTV7j7+hkFWZzTbkAQ+RUcSuYOV6jZvjutTsVFEibCaIX0kxQsBRew==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/ad2777e53e53937adc9cb49ae4e9fd4b0f0cf31b}
+    resolution: {integrity: sha512-vf/9D4dUWLx1J0VdNQZocHGpEskwQLYrqB45wadOfLBHFcCE8e0+ACpoH0qoJqBHSi17NWTJKUFMbHBQ2GL+eA==, tarball: https://npm.pkg.github.com/download/@open-ent/react/2.5.30-patched/a7efc7d98d2f5de4abe63d894e8a106e1efb43ec}
     peerDependencies:
       '@react-spring/web': 9.7.5
       '@tanstack/react-query': 5.62.7
@@ -5557,8 +5557,8 @@ packages:
       terser:
         optional: true
 
-  vite@6.4.4:
-    resolution: {integrity: sha512-xGjU/SyjeNyb0E4KxXBvYz/1C+3JXuujvf2hXNOtnlcE+58o5ajd9N2/n2VhkiJvpCP2qQasnUpx5PXNeI+p1Q==}
+  vite@6.4.5:
+    resolution: {integrity: sha512-4enwjFfi4IwtEh0w+jPzpLVOFQiPHmmzPxcHXQOyEur47o6u0jE573DmGpjA+7irXoMLYRZD5ZaFUEneS3abPg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -7911,14 +7911,14 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@vitejs/plugin-react@4.1.0(vite@6.4.4(@types/node@20.8.5)(sass@1.107.1))':
+  '@vitejs/plugin-react@4.1.0(vite@6.4.5(@types/node@20.8.5)(sass@1.107.1))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
       '@babel/plugin-transform-react-jsx-source': 7.29.7(@babel/core@7.29.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.4.4(@types/node@20.8.5)(sass@1.107.1)
+      vite: 6.4.5(@types/node@20.8.5)(sass@1.107.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -11567,13 +11567,13 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.2.1(typescript@5.2.2)(vite@6.4.4(@types/node@20.8.5)(sass@1.107.1)):
+  vite-tsconfig-paths@4.2.1(typescript@5.2.2)(vite@6.4.5(@types/node@20.8.5)(sass@1.107.1)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 2.1.2(typescript@5.2.2)
     optionalDependencies:
-      vite: 6.4.4(@types/node@20.8.5)(sass@1.107.1)
+      vite: 6.4.5(@types/node@20.8.5)(sass@1.107.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -11588,7 +11588,7 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.107.1
 
-  vite@6.4.4(@types/node@20.8.5)(sass@1.107.1):
+  vite@6.4.5(@types/node@20.8.5)(sass@1.107.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.7)
